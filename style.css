@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url(img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex; */
+}
+nav {
+  height: 15vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.logo {
+  /* background-color: red; */
+  width: 25%;
+  text-align: center;
+}
+.menu {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: green; */
+}
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav .menu a:first-child {
+  color: #00b894;
+}
+main {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+/* section {
+} */
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+section h1 {
+  margin: 30px 0 15px 0;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  word-spacing: 2px;
+  text-shadow: 1px 2px 1px black;
+}
+
+section a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  margin: 0px 5px;
+  background: #fff;
+  color: #000;
+}
+.btnone:hover {
+  background: #00b894;
+  color: #000;
+}
+section .btntwo {
+  margin: 0px 5px;
+  background: #00b894;
+  color: #000;
+}
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+
+.change_content::after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Web Development";
+  }
+  20% {
+    content: "App Development";
+  }
+  40% {
+    content: "Cyber Security";
+  }
+  60% {
+    content: "Ethical Hacking";
+  }
+  80% {
+    content: "Algorithms and DSA";
+  }
+  100% {
+    content: "Game Development";
+  }
+}
